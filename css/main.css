@@ -690,7 +690,7 @@ a {
         max-width: 350px;
     }
 
-    .deliver__item:not(:last-child){
+    .deliver__item:not(:last-child) {
         margin-bottom: 0;
     }
 
@@ -711,7 +711,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-    .deliver{
+    .deliver {
         background-position: calc(50% - 645px) top, calc(50% + 620px) calc(100% + 100px);
     }
 }
@@ -719,4 +719,100 @@ a {
 /* DEKSTOP RESPONSIVE END */
 
 /******** DELIVER END ********/
+
+/******** READY START ********/
+.ready {
+    padding-top: 83px;
+    padding-bottom: 83px;
+    background-color: var(--main-subtitle-color);
+    background-image: url('../images/ready-bg.png');
+    background-repeat: no-repeat;
+    background-position: left calc(100% + 122px);
+}
+
+.ready__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.ready__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.ready__btn {
+    display: inline-block;
+    width: 100%;
+    max-width: 153px;
+    margin: 0 auto;
+    border: 2px solid #012F34;
+    border-radius: 24px;
+    padding: 9px 33px 11px 32px;
+    color: #012F34;
+}
+
+.ready__btn:active {
+    background-color: #012F34;
+    color: var(--main-text-color);
+}
+
+/* TABLET RESPONSIVE START */
+@media only screen and (min-width: 768px) {
+    .ready {
+        padding-top: 76px;
+        padding-bottom: 76px;
+        padding-left: 77px;
+        padding-right: 78px;
+    }
+
+    .ready__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ready__title {
+        margin: 0;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .ready__btn {
+        margin: 0;
+    }
+}
+
+/* TABLET RESPONSIVE END */
+
+/* DESKTOP RESPONSIVE START */
+@media only screen and (min-width: 1024px) {
+    .ready {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ready__wrapper {
+        width: 100%;
+        max-width: 917px;
+        margin: 0 auto;
+    }
+
+    .ready__title {
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .ready{
+        background-position: calc(50% - 620px) calc(100% + 122px);
+    }
+}
+/* DESKTOP RESPONSIVE END */
+
+/******** READY END ********/
 /******************* MAIN STYLES END *********************/
